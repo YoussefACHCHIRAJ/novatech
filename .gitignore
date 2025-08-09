@@ -1,0 +1,24 @@
+# Ignore the wp-config.php file (this contains sensitive information)
+wp-config.php
+
+# Ignore the WordPress core files
+/wp-admin/
+/wp-includes/
+
+# Ignore uploaded files (media, etc.)
+wp-content/uploads/
+
+# Ignore themes and plugins (if managed externally or use a different strategy)
+# wp-content/themes
+# wp-content/plugins/
+wp-content/themes/twentytwentytwo
+wp-content/themes/twentytwentythree
+wp-content/themes/twentytwentyfour
+wp-content/ai1wm-backups/fasttrack-test-20250410-100059-cbokv3b06zdv.wpress
+# Ignore local development files
+.vscode/
+*.log
+
+# Ignore zip files
+
+*.zip
