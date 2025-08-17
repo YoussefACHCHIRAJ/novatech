@@ -1,0 +1,21 @@
+{
+  "name": "novatech",
+  "version": "1.0.0",
+  "description": "wordpress theme with tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./assets/styles/input.css -o ./assets/styles/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./assets/styles/input.css -o ./assets/styles/output.css --minify"
+  },
+  "keywords": [
+    "[wordpress",
+    "tailwindcss",
+    "php]"
+  ],
+  "author": "Youssef ACHCHIRAJ",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}

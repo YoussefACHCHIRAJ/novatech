@@ -11,7 +11,8 @@ get_header();
 ?>
 
 
-<div>This is the body</div>
+<div class="tw:bg-red-500 tw:text-white tw:text-3xl">This is the body</div>
 
 
-<?php get_footer() ?>
+<?php
+get_footer();
