@@ -7,13 +7,12 @@
  * @package NovaTech
  */
 
+use NovaTech\Inc\NovaTechTheme;
 
-
-function enqueueStyleSheets()
-{
-    wp_enqueue_style('novatech_styles', get_stylesheet_uri());
-    wp_enqueue_style('tw_novatech_styles', get_stylesheet_directory_uri() . '/assets/styles/output.css');
-    wp_enqueue_script('novatech_scripts', get_stylesheet_directory_uri() . '/assets/app.js');
+if (!defined('NOVATECH_DIR_PATH')) {
+    define('NOVATECH_DIR_PATH', get_template_directory());
 }
 
-add_action('wp_enqueue_scripts', 'enqueueStyleSheets');
+require_once NOVATECH_DIR_PATH . '/Inc/Helpers/autoloader.php';
+
+NovaTechTheme::get_instance(); 
