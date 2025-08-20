@@ -7,7 +7,18 @@
  * @package NovaTech
  */
 
+use NovaTech\Inc\Menus;
+
+// $header_menu = Menus::get_menu_items_by_location('novatech-header-menu');
+
+// echo '<pre>';
+
+// print_r($header_menu);
+// wp_die();
+
 get_header();
+
+
 ?>
 
 

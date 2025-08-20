@@ -19,11 +19,18 @@ class NovaTech_Theme
 
     public function __construct()
     {
-        Assets::get_instance();
+        $this->load_class();
 
         $this->register_hooks();
+
     }
 
+    private function load_class()
+    {
+        Assets::get_instance();
+        Menus::get_instance();
+    }
+     
     private function register_hooks()
     {
         add_action("after_setup_theme", [$this, 'setup_theme']);
@@ -53,6 +60,6 @@ class NovaTech_Theme
             'style'
         ]);
 
-        add_theme_support("align-wide"); 
+        add_theme_support("align-wide");
     }
 }
