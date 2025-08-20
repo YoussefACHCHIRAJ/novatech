@@ -47,8 +47,8 @@ function autoloader( $resource = '' ) {
 
 		switch ( strtolower($path[1]) ) {
 			case 'traits':
-				$directory = 'Traits';
-				$file_name = trim( $path[2] );
+				$directory = 'traits';
+				$file_name = strtolower(trim( $path[2] ));
 				break;
 
 			case 'widgets':
@@ -64,11 +64,11 @@ function autoloader( $resource = '' ) {
 				}
 			default:
 				$directory = 'classes';
-				$file_name = trim( $path[1] );
+				$file_name = strtolower(trim( $path[1] ));
 				break;
 		}
 
-		$resource_path = sprintf( '%s/Inc/%s/%s.php', untrailingslashit( NOVATECH_DIR_PATH ), $directory, $file_name );
+		$resource_path = sprintf( '%s/inc/%s/%s.php', untrailingslashit( NOVATECH_DIR_PATH ), $directory, $file_name );
 	}
 
 

@@ -9,9 +9,13 @@
 ?>
 <nav aria-label="Global" class="tw:flex tw:items-center tw:justify-between tw:p-6 tw:lg:px-8">
     <div class="tw:flex-1">
-        <a href="#" class="tw:-m-1.5 tw:p-1.5">
+        <a href="#" class="tw:-m-1.5 tw:p-1.5 tw:bg-white">
+            <?php
+            $logo = wp_get_attachment_Image_src(get_theme_mod('custom_logo'));
+
+            ?>
             <span class="tw:sr-only">Your Company</span>
-            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="tw:h-8 tw:w-auto" />
+            <img src="<?= $logo ? $logo[0] : "https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" ?>" alt="" class="tw:h-8 tw:w-auto" />
         </a>
     </div>
     <div class="tw:flex tw:lg:hidden">

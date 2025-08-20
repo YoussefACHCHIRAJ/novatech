@@ -1,18 +1,24 @@
 <?php
-
-
 /**
  * Theme Functions
  * 
  * @package NovaTech
  */
 
-use NovaTech\Inc\NovaTechTheme;
+use NovaTech\Inc\NovaTech_Theme;
 
 if (!defined('NOVATECH_DIR_PATH')) {
-    define('NOVATECH_DIR_PATH', get_template_directory());
+    define('NOVATECH_DIR_PATH', unTrailingSlashit(get_template_directory()));
 }
 
-require_once NOVATECH_DIR_PATH . '/Inc/Helpers/autoloader.php';
+if (!defined('NOVATECH_DIR_URI')) {
+    define('NOVATECH_DIR_URI', unTrailingSlashit(get_template_directory_uri()));
+}
 
-NovaTechTheme::get_instance(); 
+require_once NOVATECH_DIR_PATH . '/inc/helpers/autoloader.php';
+
+function novaTech_get_theme_instance() {
+    NovaTech_Theme::get_instance();
+}
+
+novaTech_get_theme_instance();
