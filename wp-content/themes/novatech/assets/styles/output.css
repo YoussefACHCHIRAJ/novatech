@@ -33,6 +33,7 @@
     --tw-tracking-tight: -0.025em;
     --tw-radius-md: 0.375rem;
     --tw-radius-lg: 0.5rem;
+    --tw-radius-xl: 0.75rem;
     --tw-radius-3xl: 1.5rem;
     --tw-blur-3xl: 64px;
     --tw-default-transition-duration: 150ms;
@@ -261,9 +262,6 @@
   .tw\:-my-6 {
     margin-block: calc(var(--tw-spacing) * -6);
   }
-  .tw\:mt-1 {
-    margin-top: calc(var(--tw-spacing) * 1);
-  }
   .tw\:mt-2 {
     margin-top: calc(var(--tw-spacing) * 2);
   }
@@ -285,9 +283,6 @@
   .tw\:flow-root {
     display: flow-root;
   }
-  .tw\:grid {
-    display: grid;
-  }
   .tw\:hidden {
     display: none;
   }
@@ -304,10 +299,6 @@
   .tw\:size-6 {
     width: calc(var(--tw-spacing) * 6);
     height: calc(var(--tw-spacing) * 6);
-  }
-  .tw\:size-11 {
-    width: calc(var(--tw-spacing) * 11);
-    height: calc(var(--tw-spacing) * 11);
   }
   .tw\:h-8 {
     height: calc(var(--tw-spacing) * 8);
@@ -333,11 +324,11 @@
   .tw\:max-w-md {
     max-width: var(--tw-container-md);
   }
+  .tw\:max-w-sm {
+    max-width: var(--tw-container-sm);
+  }
   .tw\:flex-1 {
     flex: 1;
-  }
-  .tw\:flex-auto {
-    flex: auto;
   }
   .tw\:flex-none {
     flex: none;
@@ -351,9 +342,6 @@
   }
   .tw\:transform-gpu {
     transform: translateZ(0) var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .tw\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .tw\:items-center {
     align-items: center;
@@ -377,22 +365,11 @@
   .tw\:gap-x-1 {
     column-gap: calc(var(--tw-spacing) * 1);
   }
-  .tw\:gap-x-2\.5 {
-    column-gap: calc(var(--tw-spacing) * 2.5);
-  }
   .tw\:gap-x-6 {
     column-gap: calc(var(--tw-spacing) * 6);
   }
   .tw\:gap-x-12 {
     column-gap: calc(var(--tw-spacing) * 12);
-  }
-  .tw\:divide-x {
-    :where(& > :not(:last-child)) {
-      --tw-divide-x-reverse: 0;
-      border-inline-style: var(--tw-border-style);
-      border-inline-start-width: calc(1px * var(--tw-divide-x-reverse));
-      border-inline-end-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
-    }
   }
   .tw\:divide-y {
     :where(& > :not(:last-child)) {
@@ -417,9 +394,6 @@
   .tw\:overflow-y-auto {
     overflow-y: auto;
   }
-  .tw\:rounded-3xl {
-    border-radius: var(--tw-radius-3xl);
-  }
   .tw\:rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -429,11 +403,8 @@
   .tw\:rounded-md {
     border-radius: var(--tw-radius-md);
   }
-  .tw\:bg-gray-700\/50 {
-    background-color: var(--tw-color-gray-700);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--tw-color-gray-700) 50%, transparent);
-    }
+  .tw\:rounded-xl {
+    border-radius: var(--tw-radius-xl);
   }
   .tw\:bg-gray-800 {
     background-color: var(--tw-color-gray-800);
@@ -443,9 +414,6 @@
   }
   .tw\:bg-indigo-500 {
     background-color: var(--tw-color-indigo-500);
-  }
-  .tw\:bg-white {
-    background-color: var(--tw-color-white);
   }
   .tw\:bg-linear-to-tr {
     --tw-gradient-position: to top right;
@@ -465,14 +433,11 @@
   .tw\:p-1\.5 {
     padding: calc(var(--tw-spacing) * 1.5);
   }
+  .tw\:p-2 {
+    padding: calc(var(--tw-spacing) * 2);
+  }
   .tw\:p-2\.5 {
     padding: calc(var(--tw-spacing) * 2.5);
-  }
-  .tw\:p-3 {
-    padding: calc(var(--tw-spacing) * 3);
-  }
-  .tw\:p-4 {
-    padding: calc(var(--tw-spacing) * 4);
   }
   .tw\:p-6 {
     padding: calc(var(--tw-spacing) * 6);
@@ -653,6 +618,11 @@
       }
     }
   }
+  .tw\:md\:w-1\/2 {
+    @media (width >= 48rem) {
+      width: calc(1/2 * 100%);
+    }
+  }
   .tw\:lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -661,6 +631,11 @@
   .tw\:lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .tw\:lg\:w-1\/2 {
+    @media (width >= 64rem) {
+      width: calc(1/2 * 100%);
     }
   }
   .tw\:lg\:gap-x-12 {
@@ -694,7 +669,7 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-divide-x-reverse {
+@property --tw-divide-y-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;
@@ -703,11 +678,6 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
-}
-@property --tw-divide-y-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 @property --tw-gradient-position {
   syntax: "*";
@@ -889,9 +859,8 @@
       --tw-translate-y: 0;
       --tw-translate-z: 0;
       --tw-space-y-reverse: 0;
-      --tw-divide-x-reverse: 0;
-      --tw-border-style: solid;
       --tw-divide-y-reverse: 0;
+      --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;
       --tw-gradient-via: #0000;

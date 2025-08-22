@@ -45,4 +45,19 @@ class Menus
 
         return wp_get_nav_menu_items($locations[$location]);
     }
+
+    public static function get_menu_children($menu, $parent_id)
+    {
+
+        $children = [];
+
+        foreach ($menu as $item) {
+
+            if((int) $item->menu_item_parent === (int) $parent_id) {
+                $children[] = $item;
+            }
+        }
+
+        return $children;
+    }
 }

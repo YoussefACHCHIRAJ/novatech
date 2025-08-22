@@ -41,4 +41,4 @@
                 </div>
             </nav>
 
-        </header> Your Company 
+        </header>

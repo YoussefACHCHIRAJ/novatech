@@ -1,11 +1,16 @@
 <?php
 
 /**
- * Navigation Dialog Template
+ * Mobile Navigation Dialog Template
  * 
  * @package NovaTech
  */
 
+use NovaTech\Inc\Menus;
+
+$args = wp_parse_args($args, ['menu' => null]);
+
+$menu = $args['menu'];
 ?>
 
 <el-dialog>
@@ -26,28 +31,39 @@
                 </div>
                 <div class="tw:mt-6 tw:flow-root">
                     <div class="tw:-my-6 tw:divide-y tw:divide-white/10">
-                        <div class="tw:space-y-2 tw:py-6">
-                            <div class="tw:-mx-3">
-                                <button type="button" command="--toggle" commandfor="products" class="tw:flex tw:w-full tw:items-center tw:justify-between tw:rounded-lg tw:py-2 tw:pr-3.5 tw:pl-3 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">
-                                    Product
-                                    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="tw:size-5 tw:flex-none in-aria-expanded:tw:rotate-180">
-                                        <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
-                                    </svg>
-                                </button>
-                                <el-disclosure id="products" hidden class="tw:mt-2 tw:block tw:space-y-2">
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Analytics</a>
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Engagement</a>
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Security</a>
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Integrations</a>
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Automations</a>
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Watch demo</a>
-                                    <a href="#" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Contact sales</a>
-                                </el-disclosure>
+                        <?php if ($menu): ?>
+                            <div class="tw:space-y-2 tw:py-6">
+                                <?php foreach ($menu as $item): ?>
+                                    <?php
+                                    if ($item->menu_item_parent) {
+                                        continue;
+                                    }
+
+                                    $children = Menus::get_menu_children($menu, $item->ID);
+
+                                    if (empty($children)):
+                                    ?>
+                                        <a href="<?= esc_url($item->url) ?>" class="tw:-mx-3 tw:block tw:rounded-lg tw:px-3 tw:py-2 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5"><?= esc_html($item->title) ?></a>
+                                    <?php else: ?>
+                                        <div class="tw:-mx-3">
+                                            <button type="button" command="--toggle" commandfor="products" class="tw:flex tw:w-full tw:items-center tw:justify-between tw:rounded-lg tw:py-2 tw:pr-3.5 tw:pl-3 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">
+                                                <?= esc_html($item->title) ?>
+                                                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="tw:size-5 tw:flex-none in-aria-expanded:tw:rotate-180">
+                                                    <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                                                </svg>
+                                            </button>
+                                            <el-disclosure id="products" hidden class="tw:mt-2 tw:block tw:space-y-2">
+                                                <?php foreach ($children as $child): ?>
+                                                    <a href="<?= esc_url($child->url) ?>" class="tw:block tw:rounded-lg tw:py-2 tw:pr-3 tw:pl-6 tw:text-sm/7 tw:font-semibold tw:text-white hover:tw:bg-white/5"><?= esc_html($child->title) ?></a>
+                                                <?php endforeach; ?>
+                                            </el-disclosure>
+                                        </div>
+                                    <?php endif; ?>
+
+
+                                <?php endforeach; ?>
                             </div>
-                            <a href="#" class="tw:-mx-3 tw:block tw:rounded-lg tw:px-3 tw:py-2 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Features</a>
-                            <a href="#" class="tw:-mx-3 tw:block tw:rounded-lg tw:px-3 tw:py-2 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Marketplace</a>
-                            <a href="#" class="tw:-mx-3 tw:block tw:rounded-lg tw:px-3 tw:py-2 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Company</a>
-                        </div>
+                        <?php endif; ?>
                         <div class="tw:py-6">
                             <a href="#" class="tw:-mx-3 tw:block tw:rounded-lg tw:px-3 tw:py-2.5 tw:text-base/7 tw:font-semibold tw:text-white hover:tw:bg-white/5">Log in</a>
                         </div>
