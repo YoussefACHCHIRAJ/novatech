@@ -18,7 +18,7 @@ $menu = $args['menu'];
         <div tabindex="0" class="tw:fixed tw:inset-0 tw:focus:outline-none">
             <el-dialog-panel class="tw:fixed tw:inset-y-0 tw:right-0 tw:z-50 tw:w-full tw:overflow-y-auto tw:bg-gray-900 tw:p-6 tw:sm:max-w-sm tw:sm:ring-1 tw:sm:ring-gray-100/10">
                 <div class="tw:flex tw:items-center tw:justify-between">
-                    <a href="#" class="tw:-m-1.5 tw:p-1.5">
+                    <a href="/" class="tw:-m-1.5 tw:p-1.5">
                         <span class="tw:sr-only">Your Company</span>
                         <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" class="tw:h-8 tw:w-auto" />
                     </a>
