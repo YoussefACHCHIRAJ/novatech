@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Theme Functions
  * 
@@ -17,7 +18,9 @@ if (!defined('NOVATECH_DIR_URI')) {
 
 require_once NOVATECH_DIR_PATH . '/inc/helpers/autoloader.php';
 
-function novaTech_get_theme_instance() {
+
+function novaTech_get_theme_instance()
+{
     NovaTech_Theme::get_instance();
 }
 
