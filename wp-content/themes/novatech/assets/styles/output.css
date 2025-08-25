@@ -7,18 +7,13 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --tw-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --tw-color-sky-500: oklch(68.5% 0.169 237.323);
-    --tw-color-blue-600: oklch(54.6% 0.245 262.881);
     --tw-color-indigo-400: oklch(67.3% 0.182 276.935);
     --tw-color-indigo-500: oklch(58.5% 0.233 277.117);
-    --tw-color-pink-900: oklch(40.8% 0.153 2.432);
-    --tw-color-slate-900: oklch(20.8% 0.042 265.755);
     --tw-color-gray-100: oklch(96.7% 0.003 264.542);
     --tw-color-gray-200: oklch(92.8% 0.006 264.531);
     --tw-color-gray-300: oklch(87.2% 0.01 258.338);
     --tw-color-gray-400: oklch(70.7% 0.022 261.325);
     --tw-color-gray-500: oklch(55.1% 0.027 264.364);
-    --tw-color-gray-600: oklch(44.6% 0.03 256.802);
     --tw-color-gray-800: oklch(27.8% 0.033 256.848);
     --tw-color-gray-900: oklch(21% 0.034 264.665);
     --tw-color-neutral-900: oklch(20.5% 0 0);
@@ -268,9 +263,6 @@
   .tw\:-my-6 {
     margin-block: calc(var(--tw-spacing) * -6);
   }
-  .tw\:my-6 {
-    margin-block: calc(var(--tw-spacing) * 6);
-  }
   .tw\:mt-2 {
     margin-top: calc(var(--tw-spacing) * 2);
   }
@@ -289,20 +281,11 @@
   .tw\:mb-4 {
     margin-bottom: calc(var(--tw-spacing) * 4);
   }
-  .tw\:mb-6 {
-    margin-bottom: calc(var(--tw-spacing) * 6);
-  }
   .tw\:line-clamp-2 {
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
-  }
-  .tw\:line-clamp-4 {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
   }
   .tw\:block {
     display: block;
@@ -340,8 +323,8 @@
   .tw\:h-8 {
     height: calc(var(--tw-spacing) * 8);
   }
-  .tw\:h-screen {
-    height: 100vh;
+  .tw\:min-h-44 {
+    min-height: calc(var(--tw-spacing) * 44);
   }
   .tw\:min-h-screen {
     min-height: 100vh;
@@ -456,22 +439,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .tw\:border-white\/10 {
-    border-color: var(--tw-color-white);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--tw-color-white) 10%, transparent);
-    }
-  }
   .tw\:border-white\/30 {
     border-color: var(--tw-color-white);
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--tw-color-white) 30%, transparent);
-    }
-  }
-  .tw\:border-white\/50 {
-    border-color: var(--tw-color-white);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--tw-color-white) 50%, transparent);
     }
   }
   .tw\:bg-gray-800 {
@@ -483,31 +454,10 @@
   .tw\:bg-indigo-500 {
     background-color: var(--tw-color-indigo-500);
   }
-  .tw\:bg-neutral-900 {
-    background-color: var(--tw-color-neutral-900);
-  }
-  .tw\:bg-neutral-900\/30 {
-    background-color: var(--tw-color-neutral-900);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--tw-color-neutral-900) 30%, transparent);
-    }
-  }
   .tw\:bg-neutral-900\/40 {
     background-color: var(--tw-color-neutral-900);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--tw-color-neutral-900) 40%, transparent);
-    }
-  }
-  .tw\:bg-neutral-900\/80 {
-    background-color: var(--tw-color-neutral-900);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--tw-color-neutral-900) 80%, transparent);
-    }
-  }
-  .tw\:bg-slate-900\/20 {
-    background-color: var(--tw-color-slate-900);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--tw-color-slate-900) 20%, transparent);
     }
   }
   .tw\:bg-linear-to-tr {
@@ -631,9 +581,6 @@
   .tw\:text-pretty {
     text-wrap: pretty;
   }
-  .tw\:text-blue-600 {
-    color: var(--tw-color-blue-600);
-  }
   .tw\:text-gray-200 {
     color: var(--tw-color-gray-200);
   }
@@ -645,9 +592,6 @@
   }
   .tw\:text-gray-500 {
     color: var(--tw-color-gray-500);
-  }
-  .tw\:text-gray-600 {
-    color: var(--tw-color-gray-600);
   }
   .tw\:text-indigo-400 {
     color: var(--tw-color-indigo-400);
@@ -777,6 +721,12 @@
     @media (width >= 64rem) {
       padding-inline: calc(var(--tw-spacing) * 8);
     }
+  }
+}
+@layer components {
+  .container {
+    margin: auto;
+    max-width: 1440px;
   }
 }
 @property --tw-translate-x {

@@ -10,7 +10,7 @@ get_header();
 ?>
 
 
-<div class="tw:relative tw:isolate tw:px-6 tw:pt-14 lg:tw:px-8">
+<div class="tw:relative tw:isolate tw:px-6 tw:pt-14 lg:tw:px-8 container">
     <div aria-hidden="true" class="tw:absolute tw:inset-x-0 tw:-top-40 tw:-z-10 tw:transform-gpu tw:overflow-hidden tw:blur-3xl sm:tw:-top-80">
         <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" class="tw:relative tw:left-[calc(50%-11rem)] tw:aspect-1155/678 tw:w-144.5 tw:-translate-x-1/2 tw:rotate-30 tw:bg-linear-to-tr tw:from-[#ff80b5] tw:to-[#9089fc] tw:opacity-30 sm:tw:left-[calc(50%-30rem)] sm:tw:w-288.75"></div>
     </div>

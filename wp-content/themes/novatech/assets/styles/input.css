@@ -1,1 +1,8 @@
 @import "tailwindcss" prefix(tw);
+
+
+@layer components {
+    .container {
+        @apply tw:max-w-[1440px] tw:m-auto;
+    }
+}

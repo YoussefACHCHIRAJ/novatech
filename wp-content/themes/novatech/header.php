@@ -22,7 +22,7 @@
     <?php wp_body_open() ?>
 
     <div class="tw:bg-gray-900 tw:min-h-screen tw:text-white tw:pb-4">
-        <header class="tw:z-40 tw:relative">
+        <header class="tw:z-40 tw:relative container">
             <nav aria-label="Global" class="tw:flex tw:items-center tw:justify-between tw:px-6 tw:lg:px-8">
                 <div class="tw:flex-1">
                     <a href="/" class="tw:-m-1.5 tw:p-1.5">
