@@ -19,13 +19,13 @@ class NovaTech_Theme
 
     public function __construct()
     {
-        $this->load_class();
+        $this->load_classes();
 
         $this->register_hooks();
 
     }
 
-    private function load_class()
+    private function load_classes()
     {
         Assets::get_instance();
         Menus::get_instance();

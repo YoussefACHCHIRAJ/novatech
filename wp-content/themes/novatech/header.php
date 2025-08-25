@@ -21,7 +21,7 @@
 <body>
     <?php wp_body_open() ?>
 
-    <div class="tw:bg-gray-900 tw:h-screen tw:text-white ">
+    <div class="tw:bg-gray-900 tw:min-h-screen tw:text-white tw:pb-4">
         <header class="tw:z-40 tw:relative">
             <nav aria-label="Global" class="tw:flex tw:items-center tw:justify-between tw:px-6 tw:lg:px-8">
                 <div class="tw:flex-1">
