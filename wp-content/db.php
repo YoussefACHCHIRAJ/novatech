@@ -1,0 +1,1 @@
+/var/www/html/novatech/wp-content/plugins/query-monitor/wp-content/db.php

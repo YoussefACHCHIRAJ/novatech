@@ -24,7 +24,5 @@ function novaTech_get_theme_instance()
     NovaTech_Theme::get_instance();
 }
 
-show_admin_bar(false);
-
 
 novaTech_get_theme_instance();
