@@ -1,0 +1,1321 @@
+/*
+Theme Name: Plant Nest
+Theme URI: https://cawpthemes.com/plant-nest-free-wordpress-theme/
+Author: CA WP Themes
+Author URI: https://cawpthemes.com/
+Description:Plant Nest is a beautifully crafted WordPress theme made for modern plant lovers, indoor gardeners, and eco-conscious online shops. Whether you’re building a blog to share your plant parenting journey, setting up a curated green store, or launching a local garden studio’s website — Plant Nest provides the perfect blend of aesthetic design, usability, and performance.Designed with nature in mind, this theme features elegant typography, calming color palettes, and dynamic layouts that highlight your plants and stories like never before.
+Version: 1.0.3
+Tested up to: 6.7
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: plant-nest
+Copyright (c) 2025 CA WP Themes. All rights reserved.
+Tags: one-column, two-columns, three-columns, four-columns, grid-layout , custom-background, custom-logo, custom-menu, custom-header, editor-style, featured-images, footer-widgets, sticky-post, full-width-template, theme-options, translation-ready, threaded-comments, blog, photography
+*/
+/* Reset */
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: system-ui;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	font-family: system-ui;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    color: #000;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+ul{
+    text-align: left;
+}
+
+.post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 20px;
+}
+
+.comments {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+time {
+    color: #000;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment-avatar {
+    float: left;
+    margin-right: 20px;
+}
+
+.comment-body {
+    overflow: hidden;
+}
+
+.comment-author {
+    font-weight: bold;
+    margin: 0;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.comment-content {
+    margin: 10px 0;
+}
+
+.comment-reply {
+    margin-left: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.table th {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Style links within post content */
+.entry-content a {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Style links within comment content */
+.comment-content a {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Style links within text widgets */
+.widget_text a {
+  color: green;
+  text-decoration: underline;
+}
+
+/* Accessibility */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: auto;
+  right: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------Comments-----------*/
+
+/* Style the comments section */
+.comments-area {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #ddd;
+}
+
+/* Style the comment form */
+.comment-form {
+    margin-top: 30px;
+}
+
+/* Style the comment form fields */
+.comment-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.comment-form input[type="text"], 
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+/* Style the comment list */
+.comment-list {
+    margin-top: 30px;
+}
+
+.comment {
+    margin-bottom: 30px;
+}
+
+.comment-author {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.comment-author a{
+    color: #000;
+}
+
+.comment-meta {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.comment-content {
+    margin-bottom: 10px;
+}
+
+.comment-reply-link {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+}
+
+.comment-reply-link:hover {
+    color: #f00;
+}
+
+/* Style the comment navigation links */
+.comment-navigation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-nav-prev,
+.comment-nav-next {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comment-nav-prev a,
+.comment-nav-next a {
+    text-decoration: none;
+    color: #333;
+}
+
+.comment-nav-prev:hover,
+.comment-nav-next:hover {
+    background-color: #ddd;
+}
+
+/*-------404 Page--------*/
+
+section.error-404.not-found {
+    text-align: center;
+    padding: 30px;
+}
+
+section.error-404.not-found h1 {
+    color: #000;
+}
+
+section.error-404.not-found input.search-submit {
+    padding: 10px;
+}
+
+section.error-404.not-found input.search-field {
+    padding: 10px;
+}
+
+.go-home {
+    margin-top: 10px;
+}
+
+.go-home a {
+    color: red;
+    font-size: 20px;
+}
+
+/* Plant Nest – Premium Stylish Sidebar */
+
+.widget-area {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eaeaea;
+    font-family: 'Inter', sans-serif;
+}
+
+.widget-area .widget {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #ddd;
+}
+
+.widget-area .widget:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-area .widget-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2b2b2b;
+    position: relative;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.widget-area .widget-title::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(135deg, #078b0c, #8895e6);
+    display: block;
+    margin-top: 8px;
+    border-radius: 2px;
+}
+
+.widget-area ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.widget-area ul li {
+    margin: 0;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.widget-area ul li:last-child {
+    border-bottom: none;
+}
+
+.widget-area ul li a {
+    color: #444;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.widget-area ul li a::before {
+    content: "›";
+    color: #078b0c;
+    margin-right: 6px;
+    transition: margin 0.3s ease;
+}
+
+.widget-area ul li a:hover {
+    color: #078b0c;
+    text-decoration: none;
+    padding-left: 4px;
+}
+
+.widget-area input[type="text"],
+.widget-area input[type="search"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem;
+    background-color: #fafafa;
+}
+
+.widget-area input[type="text"]:focus,
+.widget-area input[type="search"]:focus {
+    border-color: #078b0c;
+    box-shadow: 0 0 0 2px rgba(92, 106, 196, 0.15);
+    outline: none;
+}
+
+a.wp-block-latest-comments__comment-author {
+    color: gray;
+}
+
+/*----------Recommended CSS-------*/
+
+.wp-caption {
+  font-size: 14px;
+  color: #666;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.wp-caption-text {
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+
+.gallery-caption {
+  font-size: 14px;
+  color: #666;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.bypostauthor {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.alignright {
+  float: right;
+  margin-left: 10px;
+}
+
+.alignleft {
+  float: left;
+  margin-right: 10px;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+/*-----------button--------*/
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #078b0c;
+}
+
+/*--------------pagination----------*/
+
+.nav-links {
+    display: -webkit-inline-box;
+    padding: 10px;
+}
+
+.pagination {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination li {
+    margin: 0 5px;
+}
+
+.pagination a {
+    display: inline;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    color: #fff;
+    background-color: #325a21;
+}
+
+.pagination .current {
+    position: relative;
+    top: 0px;
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+    margin: 10px;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+/*----------Header CSS-------------------------------*/
+
+/*top bar*/
+
+/* Plant Nest – Top Bar (Dashicons Based) */
+.top-bar {
+    font-size: 0.85rem;
+    background: #fafafa;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.top-bar .dashicons {
+    font-size: 1rem;
+    line-height: 1;
+    vertical-align: middle;
+    margin-right: 5px;
+    color: #078b0c;
+}
+
+.top-bar a {
+    color: #555;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #078b0c;
+    text-decoration: underline;
+}
+
+.cart-count {
+    position: relative;
+    top: 15px;
+}
+
+/* Layout */
+
+span.topbar-date-head {
+    display: inline-flex;
+    font-weight: 600;
+}
+
+span.topbar-date-head p {
+    margin: 0px 10px;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-border {
+    border-bottom: 0.5px solid #ccc;
+}
+
+.site-title {
+    position: relative;
+    top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.display_only h1 a:hover{
+color: #078b0c;
+
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content {
+    flex: 2;
+    margin-right: 20px;
+}
+
+p.site-description {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #000;
+}
+
+h1.site-title a {
+    color: #078b0c;
+}
+
+h1.site-title a:hover {
+    text-decoration: none;
+}
+
+
+.display_only {
+    text-align: center;
+    padding: 30px;
+}
+
+.display_only p {
+    color: #000;
+}
+
+.display_only h1 {
+    font-size: 22px;
+}
+
+.site-logo img {
+   max-width: 120px;
+   height: auto;
+}
+.site-title, .site-description {
+    margin: 0;
+}
+
+.site-header .site-logo h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.site-header .site-logo img {
+  max-height: 50px;
+}
+
+/*------------------------------------Index.php--------------------------*/
+
+.content-area {
+    margin-top: 50px;
+}
+
+.main-index {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 18px 14px 31px 0px rgba(74, 59, 101, 0.1);
+}
+
+span.cat-links a {
+    color: #fff;
+    background-color: #078b0c;
+    font-size: 20px;
+    padding: 6px;
+}
+
+.class-category {
+    margin-bottom: 15px;
+}
+
+h2.entry-title {
+    font-size: 38px;
+}
+
+h2.entry-title a{
+    color: #078b0c;
+}
+
+
+/* Content Styles */
+.entry-content {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.entry-title {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.entry-meta {
+  font-size: 14px;
+}
+
+.entry-meta a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.entry-meta a:hover {
+  color: #078b0c;
+}
+
+.entry-footer {
+  margin-top: 1.5em;
+}
+
+.page-links {
+    margin-top: 20px;
+    clear: both;
+}
+
+.tags-list {
+    margin-bottom: 10px;
+}
+
+.read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.read-more-link:hover {
+    background-color: #078b0c;
+}
+
+.single-post .post-thumbnail {
+    padding: 0px 0px 40px 0px;
+}
+
+.single-post header.entry-header h1 {
+    font-size: 36px;
+    padding: 10px 0px;
+}
+
+.singlepost-category {
+    padding: 20px 0px 0px 0px;
+}
+
+.singlepost-category a {
+    background: #078b0c;
+    padding: 3px 15px;
+    margin: 2px;
+}
+
+.page-container {
+    margin-top: 40px;
+}
+
+.card-body a{
+    color: #000;
+    background-color: #fff !important;
+    border: none;
+}
+
+.card-body a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.main-single-post-page {
+    padding: 40px 0px 0px 40px;
+}
+
+h2.entry-title {
+    padding: 0px;
+    font-size: 34px;
+    color: #000;
+}
+
+.main-single-post-page h2.entry-title{
+padding: 10px 0px;
+}
+
+.entry-meta {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    padding: 0px 0px 0px 0px;
+    background: #fff;
+}
+
+.card-body h5 {
+    color: #000;
+    font-size: 20px;
+    padding: 0px 0px 0px 0px;
+}
+
+.cat-meta {
+    padding: 10px 0px 10px 0px;
+}
+
+.cat-meta a {
+    background: transparent !important;
+}
+
+.archive .page-container {
+    margin-top: 30px;
+}
+
+
+/*----------------- Archive Cards------------- */
+.post-archive-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.post-archive-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Thumbnail Zoom on Hover */
+.post-thumbnail {
+    display: block;
+    overflow: hidden;
+    border-radius: 6px 6px 0 0;
+}
+.post-thumbnail img {
+    transition: transform 0.4s ease;
+}
+.post-thumbnail:hover img {
+    transform: scale(1.05);
+}
+
+/* Card Titles */
+.post-archive-item .card-title a {
+    transition: color 0.3s ease;
+}
+.post-archive-item .card-title a:hover {
+    color: #2B86C5; /* Accent color */
+}
+
+/* Social Share Icons */
+.social-share a {
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+.social-share a:hover {
+    color: #ff5722;
+}
+
+/* Pagination Styling */
+.navigation.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.navigation.pagination .page-numbers {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.navigation.pagination .page-numbers:hover,
+.navigation.pagination .page-numbers.current {
+    background: linear-gradient(135deg, #ffffff 0%, #000000 100%);
+    color: #fff;
+    border-color: transparent;
+}
+
+/* Fade-in Animation */
+.post-archive-item {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+.post-archive-item:nth-child(1) { animation-delay: 0.1s; }
+.post-archive-item:nth-child(2) { animation-delay: 0.2s; }
+.post-archive-item:nth-child(3) { animation-delay: 0.3s; }
+.post-archive-item:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*-----------------Section-----------------------*/
+
+/* Style for section */
+
+/* Style for section heading */
+section h2 {
+  font-size: 36px;
+  color: #000;
+}
+
+/* Style for section content */
+section p {
+  font-size: 18px;
+  color: #5F5F5F;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+header.entry-header h1 {
+    padding: 40px 0px;
+}
+
+/*-----------------Hero Section -------*/
+
+.plantnest-hero-split {
+  padding: 100px 20px;
+  background-color: #F9F9F6;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hero-image img {
+  max-width: 450px;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  color: #2E2E2E;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.hero-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-points li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #4CAF50;
+  position: relative;
+  padding-left: 25px;
+}
+
+.hero-points li i {
+  position: absolute;
+  left: 0;
+  color: #4CAF50;
+}
+
+.btn-primary {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #388E3C;
+}
+
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+.category-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.category-box .card-body {
+  padding: 30px 20px;
+}
+
+/*----------Product Section----------*/
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #2e2e2e;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.product-glass-box {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.product-glass-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-img-wrapper {
+  height: 280px;
+  background-color: #f3f3f3;
+}
+
+.product-img-wrapper img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-glass-box:hover .product-img {
+  transform: scale(1.1);
+}
+
+.product-glass-price {
+  font-size: 0.9rem;
+  z-index: 2;
+}
+
+.product-glass-info {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  transition: 0.3s ease;
+}
+
+.product-glass-info h5 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.product-btn-holder .button {
+  background-color: #4CAF50;
+  color: #fff !important;
+  border-radius: 25px;
+  padding: 6px 18px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.product-btn-holder .button:hover {
+  background-color: #388E3C;
+}
+
+
+/*-----------Section One-------------*/
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-outline-success {
+  border-radius: 30px;
+  padding: 8px 22px;
+}
+
+
+/*-------------------Post Nav-----------*/
+
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 2em 0;
+}
+
+.nav-previous a, .nav-next a {
+    width: 300px;
+    display: inline-block;
+    color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.nav-previous a:hover, .nav-next a:hover {
+   
+    color: #078b0c;
+   
+}
+
+.nav-previous a {
+    border-radius: 5px 0 0 5px;
+}
+
+.nav-next a {
+    border-radius: 0 5px 5px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .post-navigation {
+        flex-direction: column;
+    }
+    
+    .nav-previous a, .nav-next a {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 1em;
+    }
+}
+
+/*-------------------Woocommerce---------------*/
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button.alt {
+    background-color: #000000;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+.woocommerce ul.products li.product a {
+    text-decoration: none;
+    color: #fff;
+    background: #000000;
+}
+
+.woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product p.price, .woocommerce:where(body:not(.woocommerce-uses-block-theme)) div.product span.price {
+    color: #000000;
+    font-size: 1.25em;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt:hover, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt:hover, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button.alt:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+
+/*-----------------Footer--------------------*/
+
+
+/* Footer styles */
+.Main-footer footer {
+    margin-top: 60px;
+    background-color: #eae6e6;
+    color: #fff;
+    padding: 80px 0px 0px 0px;
+    font-size: 14px;
+}
+
+article footer {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+}
+
+.footer-inside p {
+    font-size: 18px;
+    color: #000 !important;
+}
+
+
+
+.footer-inside a {
+    color: #000;
+}
+
+.footer-inside {
+    padding: 40px 20px;
+}
+
+.widget_text p {
+    font-size: 16px;
+}  
+
+h2.wp-block-heading {
+    color: #000;
+} 
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+/* Copyright styles */
+.copyright {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+
+.footer-copyright {
+    text-align: center;
+    background: #078b0c;
+    padding: 10px;
+    color: #fff;
+}
+
+
+/*-------------Back to Top--*/
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000; /* Customize as needed */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}
+
+
+/*-----------------------MOBILE Media*/
+
+@media only screen and (max-width: 768px) {
+
+    .site-title {
+    position: relative;
+    top: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.latest-outer {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.main-post-box-hm {
+    transition: 0.25s ease-out;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+    p.site-description {
+    font-size: 14px;
+    color: #000;
+    }
+
+
+    .site-branding {
+    padding: 10px;
+    text-align: center;
+    }
+
+
+    h1.site-title a {
+        font-size: 20px;
+        color: #078b0c;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/*------------Hover Effect---*/
+
+ .fade-in-text {
+    animation: fadeIn 3s;
+    -webkit-animation-duration: 3s;
+    /* animation-duration: 1s; */
+    -webkit-animation-fill-mode: both;
+}
