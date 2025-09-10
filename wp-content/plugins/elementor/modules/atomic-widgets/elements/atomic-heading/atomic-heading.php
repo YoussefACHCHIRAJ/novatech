@@ -8,7 +8,7 @@ use Elementor\Modules\AtomicWidgets\Controls\Types\Textarea_Control;
 use Elementor\Modules\AtomicWidgets\Elements\Atomic_Widget_Base;
 use Elementor\Modules\AtomicWidgets\Elements\Has_Template;
 use Elementor\Modules\AtomicWidgets\PropTypes\Classes_Prop_Type;
-use Elementor\Modules\AtomicWidgets\PropTypes\Color_Prop_Type;
+use Elementor\Modules\AtomicWidgets\PropTypes\Key_Value_Array_Prop_Type;
 use Elementor\Modules\AtomicWidgets\PropTypes\Link_Prop_Type;
 use Elementor\Modules\AtomicWidgets\PropTypes\Primitives\String_Prop_Type;
 use Elementor\Modules\AtomicWidgets\PropTypes\Size_Prop_Type;
@@ -41,7 +41,7 @@ class Atomic_Heading extends Atomic_Widget_Base {
 	}
 
 	protected static function define_props_schema(): array {
-		return [
+		$props = [
 			'classes' => Classes_Prop_Type::make()
 				->default( [] ),
 
@@ -53,46 +53,61 @@ class Atomic_Heading extends Atomic_Widget_Base {
 				->default( __( 'This is a title', 'elementor' ) ),
 
 			'link' => Link_Prop_Type::make(),
+
+			'attributes' => Key_Value_Array_Prop_Type::make(),
 		];
+
+		return $props;
 	}
 
 	protected function define_atomic_controls(): array {
+		$content_section = Section::make()
+			->set_label( __( 'Content', 'elementor' ) )
+			->set_items( [
+				Textarea_Control::bind_to( 'title' )
+					->set_label( __( 'Title', 'elementor' ) )
+					->set_placeholder( __( 'Type your title here', 'elementor' ) ),
+			] );
+
 		return [
-			Section::make()
-				->set_label( __( 'Content', 'elementor' ) )
-				->set_items( [
-					Textarea_Control::bind_to( 'title' )
-						->set_label( __( 'Title', 'elementor' ) )
-						->set_placeholder( __( 'Type your title here', 'elementor' ) ),
-					Select_Control::bind_to( 'tag' )
-						->set_label( esc_html__( 'Tag', 'elementor' ) )
-						->set_options( [
-							[
-								'value' => 'h1',
-								'label' => 'H1',
-							],
-							[
-								'value' => 'h2',
-								'label' => 'H2',
-							],
-							[
-								'value' => 'h3',
-								'label' => 'H3',
-							],
-							[
-								'value' => 'h4',
-								'label' => 'H4',
-							],
-							[
-								'value' => 'h5',
-								'label' => 'H5',
-							],
-							[
-								'value' => 'h6',
-								'label' => 'H6',
-							],
-						]),
-					Link_Control::bind_to( 'link' ),
+			$content_section,
+		];
+	}
+
+	protected function get_settings_controls(): array {
+		return [
+			Select_Control::bind_to( 'tag' )
+				->set_label( esc_html__( 'Tag', 'elementor' ) )
+				->set_options([
+					[
+						'value' => 'h1',
+						'label' => 'H1',
+					],
+					[
+						'value' => 'h2',
+						'label' => 'H2',
+					],
+					[
+						'value' => 'h3',
+						'label' => 'H3',
+					],
+					[
+						'value' => 'h4',
+						'label' => 'H4',
+					],
+					[
+						'value' => 'h5',
+						'label' => 'H5',
+					],
+					[
+						'value' => 'h6',
+						'label' => 'H6',
+					],
+				]),
+			Link_Control::bind_to( 'link' )
+				->set_label( __( 'Link', 'elementor' ) )
+				->set_meta( [
+					'topDivider' => true,
 				] ),
 		];
 	}
