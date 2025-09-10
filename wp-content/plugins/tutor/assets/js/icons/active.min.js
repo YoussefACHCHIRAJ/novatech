@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunktutor"]=self["webpackChunktutor"]||[]).push([[8635],{66794:(c,r,e)=>{e.r(r);e.d(r,{default:()=>l});const l={icon:'<circle cx="12" cy="12" r="7.5" fill="none" stroke="currentColor"/><circle cx="12" cy="12" r="3" fill="currentColor"/>',viewBox:"0 0 24 24"}}}]);

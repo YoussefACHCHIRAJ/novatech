@@ -1,0 +1,226 @@
+.wmufs_mb_50 {
+    margin-bottom: 50px;
+}
+
+.wmufs_mb_20 {
+    margin-bottom: 20px;
+}
+
+.wmufs_row {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+.wmufs_card {
+    background: #f8f8f8;
+    border: 1px solid #e4e4e4;
+    box-shadow: 1px 3px 9px 1px #eee;
+    padding: 10px 20px
+}
+
+.wmufs-col-8 {
+    width: 100%;
+    margin-right: 20px;
+}
+
+.wmufs-col-4 {
+    width: 21.3333333333%;
+    flex: 0 0 auto;
+}
+
+.wmufs_card_mini {
+    border: 1px solid #eee;
+    padding: 10px;
+    background: #f0f0f1;
+
+    .support-ticket {
+        text-align: center;
+        padding: 20px;
+
+        h2 {
+            font-size: 25px;
+        }
+
+        a {
+            display: flex;
+            text-decoration: none;
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+}
+
+body.post-type-attachment.media_page_max_uploader .notice:not(.wmufs-notice) {
+    display: none !important;
+}
+
+
+/** Form Styles **/
+.wmufs_form_centered {
+    display: flex;
+    justify-content: center;
+
+    .wmufs_inner_form_box {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    form {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+
+        table.form-table {
+            width: 100%;
+            th {
+                text-align: left;
+                vertical-align: top;
+                padding: 10px 0;
+                width: 40%;
+            }
+
+            td {
+                padding: 10px 0;
+            }
+
+            select, input[type="number"] {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            small {
+                display: block;
+                margin-top: 5px;
+                color: #777;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wmufs_form_centered {
+        flex-direction: column;
+        align-items: center;
+
+        .wmufs_inner_form_box {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+}
+
+.wmufs_faq_section {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+}
+
+.wmufs_faq_section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #23282d;
+}
+
+.wmufs_faq_item {
+    margin-bottom: 15px;
+}
+
+.wmufs_faq_item strong {
+    display: block;
+    color: #0073aa;
+}
+
+.wmufs_faq_item p {
+    margin: 5px 0 0 0;
+    color: #444;
+}
+
+
+
+/******** System Status ******************/
+
+.wmufs-system-status {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    .dashicons-warning {
+        color: #cd5c5c;
+        font-size: 20px;
+    }
+
+    .dashicons-yes {
+        color: green;
+        font-size: 20px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        text-align: left;
+
+        &:nth-child(2) {
+            text-align: center;
+            width: 100px;
+        }
+
+        &:last-child {
+            border-left: none;
+        }
+    }
+
+    th {
+        background-color: #f9f9f9;
+        font-weight: 600;
+        border-bottom: none;
+
+        &:last-child {
+            border-left: none;
+        }
+    }
+
+    tr td:first-child {
+        text-align: left;
+    }
+
+    tr:last-child td {
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.wpifw_status_message {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #555d66;
+}
+
+// Icon next to "System Status" heading
+.system-status-icon {
+    font-size: inherit;
+    line-height: unset;
+}
+
+// Responsive adjustments
+@media(max-width: 786px) {
+    .wmufs_row {
+        display: block;
+    }
+
+    .wmufs-col-8,
+    .wmufs-col-4 {
+        width: 100%;
+    }
+}
+
+
+
+@import "./promotion";

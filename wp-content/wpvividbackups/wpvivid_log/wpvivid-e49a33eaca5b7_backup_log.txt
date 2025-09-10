@@ -1,0 +1,147 @@
+Log created: 2025-06-05 11:01:06
+Type: backup
+[2025-06-05 11:01:07][notice]Start backing up.
+[2025-06-05 11:01:07][notice]server info fcgi:Off max execution time: 300 wp version:6.8.1 php version:8.2.26 db version:10.11.6 php ini:safe_mode: memory_limit:512M memory_get_usage:21,80 Mo memory_get_peak_usage:22,37 Mo extensions:PDO enabled curl enabled zlib enabled   is_multisite:0
+[2025-06-05 11:01:07][notice]Prepare to backup backup_db files.
+[2025-06-05 11:01:07][notice]Start exporting database.
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_links
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_newsletter_emails
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_newsletter_sent
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_newsletter_stats
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_newsletter_user_logs
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_coupon_applications
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_coupon_usages
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_coupons
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_earnings
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_order_items
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_quiz_attempt_answers
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_quiz_attempts
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_quiz_question_answers
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_quiz_questions
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_withdraws
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_download_log
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_order_coupon_lookup
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_order_product_lookup
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_order_tax_lookup
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_reserved_stock
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_webhooks
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_attribute_taxonomies
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_downloadable_product_permissions
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_log
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_order_itemmeta
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_order_items
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_payment_tokenmeta
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_payment_tokens
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_shipping_zone_locations
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_shipping_zone_methods
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_shipping_zones
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_tax_rate_locations
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_tax_rates
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_newsletter
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_customer_lookup
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_product_meta_lookup
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_woocommerce_api_keys
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_category_lookup
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_actionscheduler_claims
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_ordermeta
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_orders
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_order_stats
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_rate_limits
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_carts
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_cart_items
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_term_taxonomy
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wc_tax_rate_classes
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_actionscheduler_groups
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_tutor_customers
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_termmeta
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_commentmeta
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_comments
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_term_relationships
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_terms
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_rank_math_internal_meta
+[2025-06-05 11:01:07][notice]Preparing to dump table wpsbllq_wpfm_backup
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpforms_logs
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpforms_tasks_meta
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpmailsmtp_debug_events
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpmailsmtp_tasks_meta
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_actionscheduler_logs
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_e_events
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_frm_forms
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_rank_math_analytics_objects
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_product_attributes_lookup
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_product_download_directories
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_yoast_migrations
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_actionscheduler_actions
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_imagify_folders
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_order_operational_data
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_orders_meta
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_yoast_primary_term
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_yoast_seo_links
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_admin_note_actions
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_frm_item_metas
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_users
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpforms_payment_meta
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_yoast_indexable_hierarchy
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_admin_notes
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_rank_math_analytics_gsc
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_rank_math_internal_links
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_order_addresses
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_imagify_files
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpmailsmtp_emails_log
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_woocommerce_sessions
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_frm_fields
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_rank_math_analytics_inspections
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_yoast_indexable
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_frm_items
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_usermeta
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wc_orders
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_jetpack_sync_queue
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_wpforms_payments
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_options
+[2025-06-05 11:01:08][notice]Preparing to dump table wpsbllq_postmeta
+[2025-06-05 11:01:09][notice]Preparing to dump table wpsbllq_posts
+[2025-06-05 11:01:10][notice]Exporting database finished.
+[2025-06-05 11:01:10][notice]Start compressing database
+[2025-06-05 11:01:10][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_db.sql
+[2025-06-05 11:01:11][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_db.part001.zip, filesize: 2,78 Mo
+[2025-06-05 11:01:11][notice]Compressing database completed
+[2025-06-05 11:01:11][notice]Backing up backup_db completed.
+[2025-06-05 11:01:11][notice]Prepare to backup backup_themes files.
+[2025-06-05 11:01:11][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_themes.part001.zip index:583
+[2025-06-05 11:01:13][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_themes.part001.zip success. index:583 file size:20,13 Mo
+[2025-06-05 11:01:13][notice]Backing up backup_themes completed.
+[2025-06-05 11:01:13][notice]Prepare to backup backup_plugin files.
+[2025-06-05 11:01:16][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_plugin.part001.zip index:12548
+[2025-06-05 11:01:34][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_plugin.part001.zip success. index:12548 file size:69,75 Mo
+[2025-06-05 11:01:35][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_plugin.part002.zip index:22529
+[2025-06-05 11:01:46][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_plugin.part002.zip success. index:22529 file size:41,83 Mo
+[2025-06-05 11:01:46][notice]Backing up backup_plugin completed.
+[2025-06-05 11:01:46][notice]Prepare to backup backup_uploads files.
+[2025-06-05 11:01:46][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_uploads.part001.zip index:2285
+[2025-06-05 11:01:54][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_uploads.part001.zip success. index:2285 file size:154,99 Mo
+[2025-06-05 11:01:55][notice]Backing up backup_uploads completed.
+[2025-06-05 11:01:55][notice]Prepare to backup backup_content files.
+[2025-06-05 11:01:55][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_content.part001.zip index:533
+[2025-06-05 11:01:57][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_content.part001.zip success. index:533 file size:4,44 Mo
+[2025-06-05 11:01:57][notice]Backing up backup_content completed.
+[2025-06-05 11:01:57][notice]Prepare to backup backup_core files.
+[2025-06-05 11:01:57][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_core.part001.zip index:2803
+[2025-06-05 11:02:02][notice]Compressing zip file:humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_core.part001.zip success. index:2803 file size:14,49 Mo
+[2025-06-05 11:02:02][notice]Backing up backup_core completed.
+[2025-06-05 11:02:03][notice]Prepare to backup backup_merge files.
+[2025-06-05 11:02:03][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_db.zip
+[2025-06-05 11:02:03][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part001.zip, filesize: 2,27 Mo
+[2025-06-05 11:02:03][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_themes.zip
+[2025-06-05 11:02:03][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part001.zip, filesize: 22,32 Mo
+[2025-06-05 11:02:03][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_plugin.part001.zip
+[2025-06-05 11:02:06][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part001.zip, filesize: 88,99 Mo
+[2025-06-05 11:02:07][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_plugin.part002.zip
+[2025-06-05 11:02:09][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part001.zip, filesize: 128,97 Mo
+[2025-06-05 11:02:10][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_uploads.zip
+[2025-06-05 11:02:17][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part002.zip, filesize: 154,82 Mo
+[2025-06-05 11:02:17][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_content.zip
+[2025-06-05 11:02:18][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part002.zip, filesize: 159,20 Mo
+[2025-06-05 11:02:18][notice]Prepare to zip file. file: humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_core.zip
+[2025-06-05 11:02:19][notice]Adding zip files completed.humansoft-cyber.com_wpvivid-e49a33eaca5b7_2025-06-05-11-01_backup_all.part002.zip, filesize: 173,27 Mo
+[2025-06-05 11:02:20][notice]Backing up backup_merge completed.
+[2025-06-05 11:02:20][notice]Backup completed.

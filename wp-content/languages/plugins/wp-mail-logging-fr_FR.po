@@ -1,0 +1,333 @@
+# Translation of Plugins - WP Mail Logging - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - WP Mail Logging - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-10-08 12:38:31+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - WP Mail Logging - Stable (latest release)\n"
+
+#: src/WPML_Plugin.php:421
+msgid "Heads up!"
+msgstr "Attention !"
+
+#: src/inc/Migration/Migration.php:434
+msgid "<i>If you wish to keep all email logs and get the above improvements as well, please <a href=\"https://wordpress.org/support/topic/how-to-keep-your-email-logs-with-manual-v1-12-0-database-upgrade/\" target=\"_blank\">read our manual upgrade guide</a> for more information.</i>"
+msgstr "<i>Si vous souhaitez conserver tous les journaux d’e-mails et obtenir les améliorations ci-dessus, veuillez <a href=\"https://wordpress.org/support/topic/how-to-keep-your-email-logs-with-manual-v1-12-0-database-upgrade/\" target=\"_blank\">lire notre guide de mise à niveau manuelle</a> pour plus d’informations.</i>"
+
+#: src/inc/Migration/Migration.php:327
+msgid "An optional database optimization upgrade is available. Click <a href=\"%s\">here</a> to learn more."
+msgstr "Une mise à niveau facultative de l’optimisation de la base de données est disponible. Cliquez <a href=\"%s\">ici</a> pour en savoir plus."
+
+#: src/inc/Migration/Migration.php:451
+msgid "Please create a backup of your database before performing the upgrade."
+msgstr "Veuillez créer une sauvegarde de votre base de données avant d’effectuer la mise à niveau."
+
+#: src/WPML_OptionsManager.php:428 src/WPML_OptionsManager.php:429
+#: src/WPML_Plugin.php:306
+msgid "SMTP"
+msgstr "SMTP"
+
+#: src/Model/Email_Log_Collection.php:483
+msgid "Successful"
+msgstr "Réussi"
+
+#: src/inc/Admin/SMTPTab.php:695
+msgid "Step 2"
+msgstr "Étape 2"
+
+#: src/inc/Admin/SMTPTab.php:504
+msgid "Step 1"
+msgstr "Étape 1"
+
+#. translators: $1$s - WP Mail Logging plugin name; $2$s - WP.org review link;
+#. $3$s - WP.org review link.
+#: src/WPML_Plugin.php:628
+msgid "Please rate %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%3$s\" target=\"_blank\" rel=\"noopener\">WordPress.org</a> to help us spread the word."
+msgstr "Merci d’évaluer %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> sur <a href=\"%3$s\" target=\"_blank\" rel=\"noopener\">WordPress.org</a> pour nous aider à passer le mot."
+
+#: src/inc/Admin/SMTPTab.php:724
+msgid "Start Setup"
+msgstr "Démarrer la configuration"
+
+#: src/Model/Email_Log_Collection.php:484
+msgid "Failed"
+msgstr "Échoué"
+
+#. translators: %s - Lite plugin download URL.
+#: src/inc/Admin/SMTPTab.php:319
+msgid "Could not activate the plugin. Please activate it on the <a href=\"%s\">Plugins page</a>."
+msgstr "Impossible d’activer l’extension. Veuillez l’activer sur la <a href=\"%s\">page des extensions</a>."
+
+#: src/WPML_UserFeedback.php:138
+msgid "~ WP Mail Logging team"
+msgstr "~ L’équipe de WP Mail Logging"
+
+#. translators: %d Mail Log ID that was not removed.
+#: src/WPML_PrivacyController.php:138
+msgid "A mail with the id %d was unable to be removed at this time."
+msgstr "L’e-mail avec l’ID %d n’a pas pu être retiré."
+
+#: src/WPML_PrivacyController.php:101
+msgid "Mails"
+msgstr "E-mails"
+
+#: src/WPML_PrivacyController.php:43
+msgid "When you use this site several actions (e.g. commenting) trigger the dispatch of emails. They contain information about you associated with your email address. Which data are part of these emails depends on the action performed. These emails are stored and accessible to the site management as log."
+msgstr "Lorsque vous utilisez ce site plusieurs actions (p. ex.  commenter) déclenchent l’envoi d’e-mails. Ils contiennent des informations vous concernant associées à votre adresse e-mail. Les données qui font partie de ces e-mails dépendent de l’action effectuée. Ces e-mails sont stockés et accessibles du site sous au gestionnaire du site sous forme de journal."
+
+#. Description of the plugin
+#: wp-mail-logging.php
+msgid "Logs each email sent by WordPress."
+msgstr "Journaliser chaque e-mail envoyé par WordPress."
+
+#. Plugin Name of the plugin
+#: wp-mail-logging.php src/WPML_OptionsManager.php:363
+#: src/WPML_OptionsManager.php:400 src/WPML_OptionsManager.php:401
+#: src/WPML_PrivacyController.php:54 src/WPML_PrivacyController.php:62
+msgid "WP Mail Logging"
+msgstr "WP Mail Logging"
+
+#: wp-mail-logging.php:34
+msgid "Your server's PHP version: "
+msgstr "Version PHP de votre serveur :"
+
+#: wp-mail-logging.php:33
+msgid "Minimal version of PHP required: "
+msgstr "Version minimale de PHP nécessaire :"
+
+#: wp-mail-logging.php:32
+msgid "Error: plugin \"WP Mail Logging\" requires a newer version of PHP to be running."
+msgstr "Erreur : L’extension « WP Mail Logging » nécessite une version plus récente de PHP pour fonctionner."
+
+#: src/inc/Admin/SettingsTab.php:326
+msgid "Cleanup by Time"
+msgstr "Nettoyer par temps"
+
+#: src/inc/Admin/SettingsTab.php:305
+msgid "Cleanup by Amount"
+msgstr "Nettoyer par quantité"
+
+#: src/inc/Admin/SettingsTab.php:298
+msgid "Save space by deleting logs regularly."
+msgstr "Économisez de l’espace en supprimant régulièrement les journaux."
+
+#: src/inc/Admin/SettingsTab.php:256
+msgid "Display Host"
+msgstr "Afficher l’hébergeur"
+
+#: src/inc/Admin/SettingsTab.php:238
+msgid "Select your preferred display format."
+msgstr "Sélectionnez votre format d’affichage préféré."
+
+#: src/inc/Admin/SettingsTab.php:240
+msgid "Default Format for Message"
+msgstr "Format par défaut du message"
+
+#. translators: %s: Date time in WP format.
+#: src/inc/Admin/SettingsTab.php:220
+msgid "Use format from WordPress settings (%s)"
+msgstr "Utiliser le format des réglages de WordPress (%s)"
+
+#: src/inc/Admin/SettingsTab.php:211
+msgid "Can See Submission data"
+msgstr "Peut voir les envois de données"
+
+#: src/inc/Admin/SettingsTab.php:289
+msgid "Cleanup"
+msgstr "Nettoyer"
+
+#: src/inc/Admin/SettingsTab.php:202
+msgid "General Settings"
+msgstr "Réglages généraux"
+
+#: src/inc/class-wp-list-table.php:720
+msgid "Select All"
+msgstr "Tout sélectionner"
+
+#: src/inc/class-wp-list-table.php:584
+msgid "Go to the last page"
+msgstr "Aller à la dernière page"
+
+#: src/inc/class-wp-list-table.php:577
+msgid "Go to the next page"
+msgstr "Aller à la page suivante"
+
+#: src/inc/class-wp-list-table.php:573
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s sur %2$s"
+
+#: src/inc/class-wp-list-table.php:567
+msgid "Current page"
+msgstr "Page actuelle"
+
+#: src/inc/class-wp-list-table.php:558
+msgid "Go to the previous page"
+msgstr "Aller à la page précédente"
+
+#: src/inc/class-wp-list-table.php:551
+msgid "Go to the first page"
+msgstr "Aller à la première page"
+
+#: src/inc/class-wp-list-table.php:533 src/inc/class-wp-list-table.php:948
+msgid "1 item"
+msgid_plural "%s items"
+msgstr[0] "1 élément"
+msgstr[1] "%s éléments"
+
+#: src/inc/class-wp-list-table.php:465
+msgid "%s pending"
+msgstr "%s en attente"
+
+#: src/inc/class-wp-list-table.php:439
+msgid "Excerpt View"
+msgstr "Vue d’extrait"
+
+#: src/inc/class-wp-list-table.php:438
+msgid "List View"
+msgstr "Vue en liste"
+
+#. translators: 1: month name, 2: 4-digit year
+#: src/inc/class-wp-list-table.php:422
+msgid "%1$s %2$d"
+msgstr "%1$s %2$d"
+
+#: src/inc/class-wp-list-table.php:409
+msgid "Show all dates"
+msgstr "Afficher toutes les dates"
+
+#: src/inc/class-wp-list-table.php:325
+msgid "Apply"
+msgstr "Appliquer"
+
+#: src/inc/class-wp-list-table.php:315
+msgid "Bulk Actions"
+msgstr "Actions groupées"
+
+#: src/inc/class-wp-list-table.php:191
+msgid "No items found."
+msgstr "Aucun élément trouvé."
+
+#: src/WPML_OptionsManager.php:613
+msgid "Anyone"
+msgstr "N’importe qui"
+
+#: src/WPML_OptionsManager.php:611
+msgid "Subscriber"
+msgstr "Abonné"
+
+#: src/WPML_OptionsManager.php:609
+msgid "Contributor"
+msgstr "Contributeur"
+
+#: src/WPML_OptionsManager.php:607
+msgid "Author"
+msgstr "Auteur"
+
+#: src/WPML_OptionsManager.php:605
+msgid "Editor"
+msgstr "Éditeur"
+
+#: src/WPML_OptionsManager.php:600
+msgid "false"
+msgstr "false"
+
+#: src/WPML_OptionsManager.php:598
+msgid "true"
+msgstr "true"
+
+#: src/inc/Admin/EmailLogsTab.php:524 src/WPML_OptionsManager.php:573
+msgid "Search"
+msgstr "Rechercher"
+
+#: src/WPML_OptionsManager.php:520 src/WPML_OptionsManager.php:558
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous n’avez pas les droits suffisants pour accéder à cette page."
+
+#: src/WPML_OptionsManager.php:377
+msgid "Entries per page"
+msgstr "Entrées par page"
+
+#: src/WPML_OptionsManager.php:362
+msgid "WP Mail Log"
+msgstr "WP Mail Log"
+
+#: src/WPML_LifeCycle.php:204 src/WPML_OptionsManager.php:420
+#: src/WPML_OptionsManager.php:421 src/WPML_Plugin.php:302
+msgid "Settings"
+msgstr "Réglages"
+
+#. translators: %s filename of the attachment that doesn't exist.
+#: src/Renderer/Column/AttachmentsColumn.php:50
+#: src/Renderer/Column/AttachmentsColumn.php:81
+msgid "Attachment %s is not present"
+msgstr "Le fichier joint %s n’est pas présent"
+
+#: src/Renderer/Format/BaseRenderer.php:53
+#: src/Renderer/WPML_ColumnManager.php:45
+msgid "Host"
+msgstr "Hébergeur"
+
+#: src/Renderer/Format/BaseRenderer.php:44
+#: src/Renderer/WPML_ColumnManager.php:49
+msgid "Error"
+msgstr "Erreur"
+
+#: src/Renderer/Format/BaseRenderer.php:47
+#: src/Renderer/WPML_ColumnManager.php:48
+msgid "Attachments"
+msgstr "Fichiers joints"
+
+#: src/Renderer/Format/BaseRenderer.php:45
+msgid "Headers"
+msgstr "En-têtes"
+
+#: src/inc/Admin/EmailLogsTab.php:479 src/Renderer/Format/BaseRenderer.php:46
+#: src/WPML_Email_Log_List.php:510
+msgid "Message"
+msgstr "Message"
+
+#: src/Renderer/Format/BaseRenderer.php:43
+#: src/Renderer/WPML_ColumnManager.php:47
+msgid "Subject"
+msgstr "Sujet"
+
+#: src/Renderer/Format/BaseRenderer.php:42
+#: src/Renderer/WPML_ColumnManager.php:46
+msgid "Receiver"
+msgstr "Destinataire"
+
+#: src/Renderer/Format/BaseRenderer.php:41
+#: src/Renderer/WPML_ColumnManager.php:44
+msgid "Time"
+msgstr "Jour"
+
+#: src/Renderer/WPML_ColumnManager.php:43
+msgid "ID"
+msgstr "ID"
+
+#: src/WPML_Email_Log_List.php:329
+msgid "No email found."
+msgstr "Aucun e-mail trouvé."
+
+#: src/WPML_OptionsManager.php:603
+msgid "Administrator"
+msgstr "Administrateur/administratrice"
+
+#. Plugin URI of the plugin
+#: wp-mail-logging.php
+msgid "https://wordpress.org/plugins/wp-mail-logging/"
+msgstr "https://wordpress.org/plugins/wp-mail-logging/"
+
+#: src/Model/Email_Log_Collection.php:482
+msgid "All"
+msgstr "Tous"
+
+#: src/inc/Admin/SettingsTab.php:137 src/inc/Admin/SettingsTab.php:154
+msgid "Settings saved!"
+msgstr "Réglages enregistrés !"

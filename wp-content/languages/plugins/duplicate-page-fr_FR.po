@@ -1,0 +1,193 @@
+# Translation of Plugins - Duplicate Page - Development (trunk) in French (France)
+# This file is distributed under the same license as the Plugins - Duplicate Page - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-12-01 00:58:25+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Duplicate Page - Development (trunk)\n"
+
+#: duplicatepage.php:131
+msgid "Unauthorized Access."
+msgstr "Accès non autorisé."
+
+#: inc/admin-settings.php:85
+msgid "Save Changes"
+msgstr "Enregistrer les modifications"
+
+#: duplicatepage.php:357
+msgid "Never"
+msgstr "Jamais"
+
+#: duplicatepage.php:357
+msgid "Not interested"
+msgstr "Pas intéressé"
+
+#: duplicatepage.php:357
+msgid "Rate Us"
+msgstr "Évaluez-nous"
+
+#: duplicatepage.php:357
+msgid "Rate us now"
+msgstr "Évaluez-nous maintenant"
+
+#: duplicatepage.php:357
+msgid "Later"
+msgstr "Ultérieurement"
+
+#: duplicatepage.php:357
+msgid "Remind me later"
+msgstr "Me le rappeler ultérieurement"
+
+#: duplicatepage.php:357
+msgid "close"
+msgstr "fermer"
+
+#: duplicatepage.php:136
+msgid "Security check issue, Please try again."
+msgstr "Problème lors de la vérification de sécurité. Veuillez réessayer."
+
+#: duplicatepage.php:78
+msgid "Donate Now"
+msgstr "Faire un don maintenant"
+
+#: inc/admin-settings.php:49
+msgid "All Editors"
+msgstr "Tous les éditeurs/éditrices"
+
+#: duplicatepage.php:261 duplicatepage.php:277 duplicatepage.php:301
+msgid "Duplicate this as "
+msgstr "Dupliquer en tant que "
+
+#: inc/admin-settings.php:53
+msgid "Please select which editor you are using.<strong> Default: </strong> Classic Editor"
+msgstr "Veuillez sélectionner l’éditeur que vous utilisez. <strong>Par défaut :</strong> Classic Editor"
+
+#: inc/admin-settings.php:51
+msgid "Gutenberg Editor"
+msgstr "Éditeur Gutenberg"
+
+#: inc/admin-settings.php:50
+msgid "Classic Editor"
+msgstr "Classic Editor"
+
+#: inc/admin-settings.php:46
+msgid "Choose Editor"
+msgstr "Choisir l’éditeur"
+
+#: duplicatepage.php:328
+msgid "Duplicate This as "
+msgstr "Dupliquer en tant que "
+
+#: inc/admin-settings.php:63
+msgid "Pending"
+msgstr "En attente"
+
+#: inc/admin-settings.php:62
+msgid "Private"
+msgstr "Privé"
+
+#: inc/admin-settings.php:61
+msgid "Publish"
+msgstr "Publier"
+
+#: inc/admin-settings.php:60
+msgid "Draft"
+msgstr "Brouillon"
+
+#. Author URI of the plugin
+#: duplicatepage.php
+msgid "https://profiles.wordpress.org/mndpsingh287/"
+msgstr "https://profiles.wordpress.org/mndpsingh287/"
+
+#. Author of the plugin
+#: duplicatepage.php
+msgid "mndpsingh287"
+msgstr "mndpsingh287"
+
+#. Description of the plugin
+#: duplicatepage.php
+msgid "Duplicate Posts, Pages and Custom Posts using single click."
+msgstr "Dupliquer des publications, des pages et des publications personnalisées à l’aide d’un simple clic."
+
+#. Plugin URI of the plugin
+#: duplicatepage.php
+msgid "https://wordpress.org/plugins/duplicate-page/"
+msgstr "https://wordpress.org/plugins/duplicate-page/"
+
+#: duplicatepage.php:261 duplicatepage.php:277 duplicatepage.php:300
+msgid "Duplicate This"
+msgstr "Dupliquer cela"
+
+#. Plugin Name of the plugin
+#: duplicatepage.php duplicatepage.php:91 duplicatepage.php:357
+msgid "Duplicate Page"
+msgstr "Duplicate Page"
+
+#: duplicatepage.php:78
+msgid "Donate"
+msgstr "Faire un don"
+
+#: duplicatepage.php:77
+msgid "Settings"
+msgstr "Réglages"
+
+#: inc/admin-settings.php:81
+msgid "Add a suffix for duplicate or clone post as Copy, Clone etc. It will show after title."
+msgstr "Ajouter un suffixe pour dupliquer ou cloner une publication comme copie, clone etc.. Il sera visible après le titre."
+
+#: inc/admin-settings.php:78
+msgid "Duplicate Post Suffix"
+msgstr "Dupliquer le suffixe de la publication"
+
+#: inc/admin-settings.php:74
+msgid "Please select any post redirection, redirect you to selected after click on duplicate this link.<strong> Default: </strong>To All Posts List"
+msgstr "Veuillez sélectionner toute redirection de publication, vous redirige vers la sélection après avoir cliqué sur « Dupliquer ce lien ». <strong>Par défaut :</strong> pour toutes les publications."
+
+#: inc/admin-settings.php:72
+msgid "To Duplicate Edit Screen"
+msgstr "Vers l’écran de duplication"
+
+#: inc/admin-settings.php:71
+msgid "To All Posts List"
+msgstr "Vers la liste des publications"
+
+#: inc/admin-settings.php:69
+msgid "Redirect to after click on <strong>Duplicate This Link</strong>"
+msgstr "Rediriger vers, après avoir cliqué sur <strong>Dupliquer ce lien</strong>"
+
+#: inc/admin-settings.php:65
+msgid "Please select any post status you want to assign for duplicate post.<strong> Default: </strong> Draft"
+msgstr "Veuillez sélectionner l’état que vous souhaitez assigner à publication dupliquée. <strong>Par défaut :</strong> Brouillon."
+
+#: inc/admin-settings.php:57
+msgid "Duplicate Post Status"
+msgstr "Dupliquer l’état de la publication"
+
+#: inc/admin-settings.php:34
+msgid ""
+"<div class=\"error settings-error notice is-dismissible\" id=\"setting-error-settings_updated\"> \n"
+"  <p><strong>Settings not saved.</strong></p><button class=\"notice-dismiss button-custom-dismiss\" type=\"button\"><span class=\"screen-reader-text\">Dismiss this notice</span></button></div>"
+msgstr ""
+"<div class=\"error settings-error notice is-dismissible\" id=\"setting-error-settings_updated\"> \n"
+"  <p><strong>Les réglages n’ont pas été enregistrés.</strong></p><button class=\"notice-dismiss button-custom-dismiss\" type=\"button\"><span class=\"screen-reader-text\">Ignorer cette notification.</span></button></div>"
+
+#: inc/admin-settings.php:31
+msgid ""
+"<div class=\"updated settings-error notice is-dismissible\" id=\"setting-error-settings_updated\"> \n"
+"    <p><strong>Settings saved.</strong></p><button class=\"notice-dismiss button-custom-dismiss\" type=\"button\"><span class=\"screen-reader-text\">Dismiss this notice</span></button></div>"
+msgstr ""
+"<div class=\"updated settings-error notice is-dismissible\" id=\"setting-error-settings_updated\"> \n"
+"    <p><strong>Réglages enregistrés.</strong></p><button class=\"notice-dismiss button-custom-dismiss\" type=\"button\"><span class=\"screen-reader-text\">Ignorer cette notification.</span></button></div>"
+
+#: inc/admin-settings.php:9
+msgid "Buy PRO"
+msgstr "Acheter la version PRO"
+
+#: inc/admin-settings.php:9
+msgid "Duplicate Page Settings "
+msgstr "Réglages de Duplicate Page "
