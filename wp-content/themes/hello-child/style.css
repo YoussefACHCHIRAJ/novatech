@@ -1,0 +1,53 @@
+/**
+ * Theme Name: Hello Elementor Child Theme
+ * Template:   hello-elementor
+ * Author: Youssef ACHCHIRAJ
+ *
+ * @package Hello Elementor Child
+ */
+
+:root {
+  --orange-700: rgb(194 65 12 / 1);
+  --orange-200: rgb(254 215 170 / 1);
+  --orange-100: rgb(255 237 213 / 1);
+}
+
+.child-sub-header {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-block: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.child-header-separator {
+  background-color: #c6c6c6;
+  height: 1px;
+  border: none;
+}
+
+.child-sub-header .emergency,
+.child-sub-header .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.child-sub-header .phone {
+  color: var(--orange-700);
+  font-weight: 500;
+}
+
+.child-sub-header .emergency .badge {
+  border-radius: 5px;
+  border: 1px solid var(--orange-200);
+  color: var(--orange-700);
+  background-color: var(--orange-100);
+  padding: 2px 5px;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
